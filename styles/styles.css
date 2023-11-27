@@ -14,7 +14,15 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 21px;
@@ -45,7 +53,7 @@ body {
 }
 
 .button-green {
-  background-color: #7DB54F;
+  background-color: #7db54f;
 }
 
 .button-transparent {
@@ -60,6 +68,10 @@ body {
   color: #000000;
   text-decoration: none;
   text-transform: capitalize;
+}
+
+.main-container {
+  flex-grow: 1;
 }
 
 .hero {
