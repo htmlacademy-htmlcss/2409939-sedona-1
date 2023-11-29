@@ -249,21 +249,27 @@ body {
 
 .page-footer-container {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 1200px;
-  margin: 0 auto;
+  margin: 40px auto;
 }
 
-.footer-social {
-  width: 150px;
-  margin-right: 195px;
+.footer-social-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  margin-left: 70px;
+  padding: 0;
 }
 
 .footer-social-item {
-  list-style: none;
+  padding: 0 10px;
 }
 
 .page-footer-logo {
-  margin-left: auto;
+  margin-right: 70px;
   width: 115px;
 }
 
@@ -274,6 +280,8 @@ body {
   text-transform: uppercase;
   color: #000000;
   text-decoration: none;
+  margin: 40px 0 30px;
+  padding: 5px;
 }
 /*catalog*/
 
