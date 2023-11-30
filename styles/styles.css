@@ -94,6 +94,11 @@ body {
   list-style: none;
 }
 
+.navigation-item {
+  margin: 0;
+  padding: 0;
+}
+
 .navigation-user {
   display: flex;
   margin-left: auto;
@@ -112,7 +117,7 @@ body {
 }
 
 .user {
-  padding: 22px 12px;
+  padding: 20px 12px;
 }
 
 .main-container {
@@ -141,11 +146,17 @@ body {
   width: 140px;
   height: 70px;
   margin-left: 70px;
+  margin-bottom: -10px;
+  position: relative;
 }
 
 .logo {
   display: block;
   margin: 0 auto;
+}
+
+.advantages {
+  margin: 69px 0;
 }
 
 .advantages-list {
@@ -154,22 +165,34 @@ body {
   justify-content: space-between;
   list-style: none;
   margin: 0;
+  margin-top: 21px;
   padding: 0;
 }
 
 .hero {
   color: #000000;
   background: #ffffff;
-  background-image: url("../images/index-background.jpg");
+  background-image: url("../images/decor.svg"), url("../images/index-background.jpg");
+  background-position: 50% 100%, 50% 50%;
+  height: 434px;
   background-repeat: no-repeat;
+  padding-top: 51px;
+}
+
+.logo {
+  width: 458px;
+  height: 352px;
+  margin: 0 auto;
 }
 
 .subtitle {
   font-size: 30px;
   font-weight: 700;
   line-height: 36px; /* 120% */
+  padding: 0 290px;
   text-transform: uppercase;
   text-align: center;
+  margin: 0;
 }
 
 .description {
@@ -177,6 +200,7 @@ body {
   font-weight: 400;
   line-height: 26px;
   text-align: center;
+  margin: 25px 0 69px;
 }
 
 .advantages-title {
@@ -184,17 +208,31 @@ body {
   font-weight: 700;
   line-height: 28px;
   text-transform: uppercase;
+  margin: 21px 0 0;
+  padding: 103px 103px 30px;
+}
+
+.advantages-description {
+  margin: 0;
+  padding: 30px 85px 103px;
 }
 
 .advantages-item {
   text-align: center;
+  background: #f0f6fa;
   width: 400px;
   height: 385px;
 }
 
-.advantages-item-light {
+.advantages-item-blue {
   color: #ffffff;
   background: #82b3d3;
+  display: flex;
+  width: 100%;
+}
+
+.advantages-item-light {
+  background: #e6f0f6;
 }
 
 .service-list {
@@ -211,16 +249,32 @@ body {
   height: 385px;
 }
 
+.service-item-blue {
+  background: #f0f6fa;
+}
+
 .service-title {
   font-size: 24px;
   font-weight: 700;
   line-height: 28px; /* 116.667% */
   text-transform: uppercase;
+  margin: 0;
+  padding: 30px 0 0;
+}
+
+.service-icon {
+  margin: 0;
+  padding: 80px 0 0;
+}
+
+.service-description {
+  margin: 0;
+  padding: 30px 85px 80px;
 }
 
 .search {
   text-align: center;
-  padding: 96px 304px;
+  margin: 96px 0;
 }
 
 .search a {
@@ -233,18 +287,49 @@ body {
   text-transform: uppercase;
 }
 
+.search-description {
+  margin: 20px 304px 54px;
+}
+
+
 .subscription {
   text-align: center;
   color: #000000;
   background: #ffffff;
-  block-size: 100% auto;
   background-repeat: no-repeat;
-  padding: 96px 258px 104px 258px;
+  padding: 96px 0 104px;
 }
 
 .subscription-inner {
   background-image: url("../images/subscribe.jpg");
+  height: 215px;
   color: #ffffff;
+}
+
+.field {
+  font-family: "PT Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  padding: 12px 20px;
+  height: 48px;
+  width: 452px;
+  border-radius: 4px 0 0 4px;
+  border: none;
+}
+
+.newsletter-button {
+  border-radius: 0 4px 4px 0;
+}
+
+.newsletter-form {
+  display: flex;
+  justify-content: center;
+}
+
+.page-footer {
+  margin: 40px 70px;
 }
 
 .page-footer-container {
@@ -253,7 +338,7 @@ body {
   justify-content: space-between;
   align-items: center;
   width: 1200px;
-  margin: 40px auto;
+  margin: 0 auto;
 }
 
 .footer-social {
