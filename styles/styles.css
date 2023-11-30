@@ -249,10 +249,16 @@ body {
 
 .page-footer-container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   width: 1200px;
   margin: 40px auto;
+}
+
+.footer-social {
+  width: 150px;
+  margin-right: 195px;
 }
 
 .footer-social-list {
@@ -269,6 +275,7 @@ body {
 }
 
 .page-footer-logo {
+  margin-left: auto;
   margin-right: 70px;
   width: 115px;
 }
