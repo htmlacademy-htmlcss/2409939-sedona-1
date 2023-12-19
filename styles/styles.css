@@ -88,10 +88,10 @@ body {
 .navigation-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   margin: 0;
   padding: 0;
   list-style: none;
+  max-width: 500px;
 }
 
 .navigation-item {
@@ -102,6 +102,7 @@ body {
 .navigation-user {
   display: flex;
   margin-left: auto;
+  margin-right: 70px;
 }
 
 .navigation-link {
@@ -138,15 +139,21 @@ body {
 .header-button {
   align-self: center;
   flex-shrink: 0;
-  margin: 14px 70px 14px 20px;
+  margin: 14px 0 14px 20px;
+  max-width: 100px;
 }
 
+.page-header-logo {
+  height: 70px;
+  width: 140px;
+  display: inline-block;
+  margin-left: 70px;
+  margin-bottom: -10px;
+}
 
 .navigation-logo {
   width: 140px;
   height: 70px;
-  margin-left: 70px;
-  margin-bottom: -10px;
   position: relative;
 }
 
