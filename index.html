@@ -96,19 +96,22 @@
           <p class="description">Опытный персонал и качественное обслуживание!</p>
           <ul class="service-list">
             <li class="service-item service-item-blue">
-              <img class="service-icon" src="images/housing.svg" alt="Дом">
-              <h3 class="service-title">Жильё</h3>
-              <p class="service-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+              <div class="service-wrap">
+                <h3 class="service-title">Жильё</h3>
+                <p class="service-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+              </div>
             </li>
             <li class="service-item">
-              <img class="service-icon" src="images/food.svg" alt="Бургер">
-              <h3 class="service-title">Еда</h3>
-              <p class="service-description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+              <div class="service-wrap">
+                <h3 class="service-title">Еда</h3>
+                <p class="service-description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+              </div>
             </li>
             <li class="service-item service-item-blue">
-              <img class="service-icon" src="images/souvenir.svg" alt="Подарок">
-              <h3 class="service-title">Сувениры</h3>
-              <p class="service-description">Не только китайского, но и настоящего местного производства!</p>
+              <div class="service-wrap">
+                <h3 class="service-title">Сувениры</h3>
+                <p class="service-description">Не только китайского, но и настоящего местного производства!</p>
+              </div>
             </li>
           </ul>
         </section>
@@ -118,15 +121,14 @@
           <p class="search-description">Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в Седоне</p>
           <a class="button button-brown" href="#">Поиск гостиницы в Седоне</a>
         </section>
-        <section class="subscription subscription-inner">
+        <section class="subscription subscription--background">
           <h2 class="visually-hidden">Подписка на рассылку</h2>
           <p class="subtitle">Подпишитесь на рассылку</p>
           <p class="description">Только полезная информация и никакого спама, честное бойскаутское!</p>
           <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-            <label for="newsletter-email"></label>
             <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
             <button class="button newsletter-button" type="submit">
-              <span>Подписаться</span>
+            Подписаться
             </button>
           </form>
         </section>
@@ -158,11 +160,11 @@
           </ul>
         </section>
         <div class="footer-contacts">
-          <h2 class="visually-hidden">Контакты</h2>
+          <span class="visually-hidden">Контакты</span>
             <a class="footer-contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
         </div>
         <div class="page-footer-logo">
-          <h2 class="visually-hidden">Логотип HTML academy</h2>
+          <span class="visually-hidden">Логотип HTML academy</span>
           <a href="https://htmlacademy.ru/">
             <img class="logo-htmlacademy" src="images/logo-html-academy.svg" alt="Логотип .html academy">
           </a>
