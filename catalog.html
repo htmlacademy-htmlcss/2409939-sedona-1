@@ -39,9 +39,11 @@
               </span>
             </a>
           </li>
+          <li>
+            <a class="button header-button button-small button-brown" href="#">Хочу сюда!</a>
+          </li>
         </ul>
       </nav>
-      <div class="header-button"><a class="button button-small button-brown" href="#">Хочу сюда!</a></div>
     </header>
     <main class="main-container">
       <div class="page-container">
@@ -49,9 +51,8 @@
           <header class="inner-header">
             <h1 class="inner-header-title">Гостиницы Седоны</h1>
             <ul class="breadcrumbs">
-              <li class="breadcrumbs-item">
-                <a class="breadcrumbs-link" href="index.html">
-                  <img class="breadcrumbs-icon" src="images/home.svg" alt="Главная страница">
+              <li class="breadcrumbs-item breadcrumbs-item-home">
+                <a class="breadcrumbs-link breadcrumbs-link-home" href="index.html">
                 </a>
               </li>
               <li class="breadcrumbs-item">
@@ -120,8 +121,8 @@
                 </div>
               </fieldset>
               <div class="submit-reset">
-                <button class="button" type="submit">Применить</button>
-                <button class="button button-transparent" type="reset">Сбросить</button>
+                <button class="button button-small " type="submit">Применить</button>
+                <button class="button button-transparent button-small " type="reset">Сбросить</button>
               </div>
             </form>
         </div>
@@ -258,13 +259,11 @@
         <section class="subscription">
           <h2 class="visually-hidden">Подписка на рассылку</h2>
           <p class="subtitle">Подпишитесь на рассылку</p>
-          <p class="desc">Только полезная информация и никакого спама, честное бойскаутское!</p>
+          <p class="description">Только полезная информация и никакого спама, честное бойскаутское!</p>
           <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-            <label for="newsletter-email">Email</label>
-            <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email"
-              required>
+            <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
             <button class="button newsletter-button" type="submit">
-              <span>Подписаться</span>
+            Подписаться
             </button>
           </form>
         </section>
@@ -296,11 +295,11 @@
           </ul>
         </section>
         <div class="footer-contacts">
-          <h2 class="visually-hidden">Контакты</h2>
+          <span class="visually-hidden">Контакты</span>
             <a class="footer-contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
         </div>
         <div class="page-footer-logo">
-          <h2 class="visually-hidden">Логотип HTML academy</h2>
+          <span class="visually-hidden">Логотип HTML academy</span>
           <a href="https://htmlacademy.ru/">
             <img class="logo-htmlacademy" src="images/logo-html-academy.svg" alt="Логотип .html academy">
           </a>
