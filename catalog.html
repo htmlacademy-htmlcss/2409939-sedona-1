@@ -129,31 +129,33 @@
           <div class="catalog-column">
             <div class="sorting-container">
               <h2 class="heading">Найдено гостиниц: <span>38</span> </h2>
-              <select class="select-control" aria-label="Сортировка">
-                <option value="cheap" selected>Сначала дешёвое</option>
-                <option value="popular">Сначала популярное</option>
-                <option value="expensive">Сначала дорогое</option>
-              </select>
-              <div class="display-selection">
-                <a href="#" class="button button-transparent button-border">
-                  <img src="images/table.svg" alt="Показать список">
-                  <span class="visually-hidden">Показать список</span>
-                </a>
-                <a href="#" class="button button-transparent">
-                  <img src="images/slideshow.svg" alt="Показать карточки">
-                  <span class="visually-hidden">Показать карточки</span>
-                </a>
-                <a href="#" class="button button-transparent">
-                  <img src="images/list.svg" alt="Показать во весь экран">
-                  <span class="visually-hidden">Показать во весь экран</span>
-                </a>
+              <div class="catalog-sorting">
+                <select class="select-control" aria-label="Сортировка">
+                  <option value="cheap" selected>Сначала дешёвое</option>
+                  <option value="popular">Сначала популярное</option>
+                  <option value="expensive">Сначала дорогое</option>
+                </select>
+                <div class="display-selection">
+                  <button class="button button-transparent button-border" type="button">
+                    <img src="images/table.svg" alt="Показать карточки">
+                    <span class="visually-hidden">Показать карточки</span>
+                  </button>
+                  <button class="button button-transparent">
+                    <img src="images/slideshow.svg" alt="Показать во весь экран" type="button">
+                    <span class="visually-hidden">Показать во весь экран</span>
+                  </button>
+                  <button class="button button-transparent">
+                    <img src="images/list.svg" alt="Показать список" type="button">
+                    <span class="visually-hidden">Показать список</span>
+                  </button>
+                </div>
               </div>
             </div>
           </div>
           <ul class="hotel-list">
             <li class="hotel-item">
               <a class="hotel-card-link" href="hotel.html">
-                <img class="hotel-card-image" src="images/hotel-1.jpg" alt="Amara Resort & Spa">
+                <img class="hotel-card-image" src="images/hotel-1.jpg" alt="Amara Resort & Spa" width="300" height="212">
                 <h3 class="hotel-card-title">Amara Resort & Spa</h3>
               </a>
               <p class="hotel-card-text">Гостиница</p>
@@ -163,18 +165,15 @@
                 <button class="hotel-card-button button-small button button-blue favorites-item" type="button">в избранное</button>
               </div>
               <div class="hotel-card-star">
-                <ul>
-                  <li><img class="star" src="images/star.svg" alt="звезда"></li>
-                  <li><img class="star" src="images/star.svg" alt="звезда"></li>
-                  <li><img class="star" src="images/star.svg" alt="звезда"></li>
-                  <li><img class="star" src="images/star.svg" alt="звезда"></li>
-                </ul>
+                <p class="star star-4">
+                  <span class="visually-hidden">четыре звезды</span>
+                </p>
               </div>
               <p class="hotel-card-rating">Рейтинг: <span>8,5</span></p>
             </li>
             <li class="hotel-item">
               <a class="hotel-card-link" href="hotel.html">
-                <img class="hotel-card-image" src="images/hotel-2.jpg" alt="Villas at Poco Diablo">
+                <img class="hotel-card-image" src="images/hotel-2.jpg" alt="Villas at Poco Diablo" width="300" height="212">
                 <h3 class="hotel-card-title">Villas at Poco Diablo</h3>
               </a>
               <p class="hotel-card-text">Гостиница</p>
@@ -184,18 +183,15 @@
                 <button class="hotel-card-button button-small button button-blue button-green favorites-item" type="button">в избранное</button>
               </div>
               <div class="hotel-card-star">
-                <ul>
-                  <li><img class="star" src="images/star.svg" alt="звезда"></li>
-                  <li><img class="star" src="images/star.svg" alt="звезда"></li>
-                  <li><img class="star" src="images/star.svg" alt="звезда"></li>
-                  <li><img class="star" src="images/star.svg" alt="звезда"></li>
-                </ul>
+                <p class="star star-4">
+                  <span class="visually-hidden">четыре звезды</span>
+                </p>
               </div>
               <p class="hotel-card-rating">Рейтинг: <span>9,2</span></p>
             </li>
             <li class="hotel-item">
               <a class="hotel-card-link" href="hotel.html">
-                <img class="hotel-card-image" src="images/hotel-3.jpg" alt="Desert Quail Inn">
+                <img class="hotel-card-image" src="images/hotel-3.jpg" alt="Desert Quail Inn" width="300" height="212">
                 <h3 class="hotel-card-title">Desert Quail Inn</h3>
               </a>
               <p class="hotel-card-text">Гостиница</p>
@@ -205,17 +201,15 @@
                 <button class="hotel-card-button button-small button button-blue favorites-item" type="button">в избранное</button>
               </div>
               <div class="hotel-card-star">
-                <ul>
-                  <li><img class="star" src="images/star.svg" alt="звезда"></li>
-                  <li><img class="star" src="images/star.svg" alt="звезда"></li>
-                  <li><img class="star" src="images/star.svg" alt="звезда"></li>
-                </ul>
+                <p class="star star-3">
+                  <span class="visually-hidden">три звезды</span>
+                </p>
               </div>
               <p class="hotel-card-rating">Рейтинг: <span>6,9</span></p>
             </li>
             <li class="hotel-item">
               <a class="hotel-card-link" href="hotel.html">
-                <img class="hotel-card-image" src="images/hotel-4.jpg" alt="GreenTree Inn">
+                <img class="hotel-card-image" src="images/hotel-4.jpg" alt="GreenTree Inn" width="300" height="212">
                 <h3 class="hotel-card-title">GreenTree Inn</h3>
               </a>
               <p class="hotel-card-text">Гостиница</p>
@@ -225,10 +219,9 @@
                 <button class="hotel-card-button button-small button button-blue favorites-item" type="button">в избранное</button>
               </div>
               <div class="hotel-card-star">
-                <ul>
-                  <li><img class="star" src="images/star.svg" alt="звезда"></li>
-                  <li><img class="star" src="images/star.svg" alt="звезда"></li>
-                </ul>
+                <p class="star star-2">
+                  <span class="visually-hidden">две звезды</span>
+                </p>
               </div>
               <p class="hotel-card-rating">Рейтинг: <span>5,0</span></p>
             </li>
