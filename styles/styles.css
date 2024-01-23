@@ -58,8 +58,9 @@ body {
   color: #ffffff;
   background-color: #82b3d3;
   border: none;
-  padding: 8px 50px;
+  padding: 8px 20px;
   border-radius: 4px;
+  margin: 0;
 }
 
 .button-small {
@@ -81,6 +82,7 @@ body {
 
 .button-transparent {
   background-color: transparent;
+  border-radius: 4px;
 }
 
 .navigation {
@@ -662,10 +664,10 @@ input[type="number"]::-webkit-outer-spin-button {
 
 .hotel-list {
   display: grid;
-  grid-template-columns: 340px 340px 340px;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
   padding: 0;
-  margin: 0 50px;
+  margin: 0 70px 80px;
 }
 
 .hotel-item {
@@ -677,10 +679,14 @@ input[type="number"]::-webkit-outer-spin-button {
   font-weight: 700;
   line-height: 28px; /* 116.667% */
   color: #000000;
+  padding: 16px 0;
+  margin: 0;
 }
 
 .hotel-item {
   list-style: none;
+  border-radius: 4px;
+  border: 1px solid #e6e6e6;
 }
 
 .hotel-card-link {
@@ -691,6 +697,25 @@ input[type="number"]::-webkit-outer-spin-button {
   width: 300px;
   height: 212px;
   object-fit: cover;
+  display: block;
+  margin: 0 auto;
+}
+
+.hotel-card-text-price {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 16px;
+}
+
+.hotel-card-star-rating {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 16px;
+}
+
+.hotel-card-button {
+  display: flex;
+  justify-content: space-between;
 }
 
 .hotel-card-star li {
@@ -699,6 +724,7 @@ input[type="number"]::-webkit-outer-spin-button {
 
 .star {
   background-image: url("../images/star.svg");
+  margin: 8px 0;
 }
 
 .star-4 {
@@ -716,11 +742,20 @@ input[type="number"]::-webkit-outer-spin-button {
   height: 17px;
 }
 
-.hotel-card-text .hotel-card-price {
+.hotel-card-text {
   font-size: 18px;
   font-weight: 400;
   line-height: 21px;
   color: #333333;
+  margin: 0;
+}
+
+.hotel-card-price {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+  color: #333333;
+  margin: 0;
 }
 
 .hotel-card-rating {
@@ -730,9 +765,14 @@ input[type="number"]::-webkit-outer-spin-button {
   text-transform: uppercase;
 }
 
+.button-rating {
+  background-color: #f2f2f2;
+  color: #000000;
+}
+
 .pagination {
   display: flex;
-  margin: 0;
+  margin: 0 70px;
   padding: 0;
   list-style: none;
 }
