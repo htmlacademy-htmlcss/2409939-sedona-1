@@ -124,16 +124,16 @@
                       </label>
                     </div>
                     <div class="range1">
-                      <div class="range-scale">
-                        <div class="range-bar">
-                          <button class="range-toggle toggle-min">
-                            <span class="visually-hidden">Изменить минимальную цену.</span>
-                          </button>
-                          <button class="range-toggle toggle-max">
-                            <span class="visually-hidden">Изменить максимальную цену.</span>
-                          </button>
-                        </div>
-                      </div>
+                      <span class="range-scale">
+                        <span class="range-bar">
+                        </span>
+                      </span>
+                      <button class="range-toggle toggle-min" type="button">
+                        <span class="visually-hidden">Изменить минимальную цену.</span>
+                      </button>
+                      <button class="range-toggle toggle-max" type="button">
+                        <span class="visually-hidden">Изменить максимальную цену.</span>
+                      </button>
                     </div>
                   </div>
                 </fieldset>
@@ -191,7 +191,7 @@
                   <span class="visually-hidden">четыре звезды</span>
                 </p>
               </div>
-              <p class="hotel-card-rating button-rating button button-small">Рейтинг: <span>8,5</span></p>
+              <p class="hotel-card-rating rating">Рейтинг: <span>8,5</span></p>
             </div>
           </li>
           <li class="hotel-item">
@@ -213,7 +213,7 @@
                   <span class="visually-hidden">четыре звезды</span>
                 </p>
               </div>
-              <p class="hotel-card-rating button button-rating">Рейтинг: <span>9,2</span></p>
+              <p class="hotel-card-rating rating">Рейтинг: <span>9,2</span></p>
             </div>
           </li>
           <li class="hotel-item">
@@ -235,7 +235,7 @@
                   <span class="visually-hidden">три звезды</span>
                 </p>
               </div>
-              <p class="hotel-card-rating button button-rating">Рейтинг: <span>6,9</span></p>
+              <p class="hotel-card-rating rating">Рейтинг: <span>6,9</span></p>
             </div>
           </li>
           <li class="hotel-item">
@@ -257,15 +257,13 @@
                   <span class="visually-hidden">две звезды</span>
                 </p>
               </div>
-              <p class="hotel-card-rating button button-rating">Рейтинг: <span>5,0</span></p>
+              <p class="hotel-card-rating rating">Рейтинг: <span>5,0</span></p>
             </div>
           </li>
         </ul>
-        <ul class="pagination">
+        <ol class="pagination">
           <li class="pagination-item">
-            <a class="pagination-link pagination-disabled">
-              <span class="number-black">1</span>
-            </a>
+            <a class="pagination-link pagination-disabled pagination-link-current">1</a>
           </li>
           <li class="pagination-item">
             <a class="pagination-link" href="#">2</a>
@@ -282,7 +280,7 @@
           <li class="pagination-item">
             <a class="pagination-link" href="#">10</a>
           </li>
-        </ul>
+        </ol>
         <section class="subscription">
           <h2 class="visually-hidden">Подписка на рассылку</h2>
           <p class="subtitle">Подпишитесь на рассылку</p>
@@ -323,7 +321,7 @@
         </section>
         <div class="footer-contacts">
           <span class="visually-hidden">Контакты</span>
-          <a class="footer-contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+            <a class="footer-contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
         </div>
         <div class="page-footer-logo">
           <span class="visually-hidden">Логотип HTML academy</span>
