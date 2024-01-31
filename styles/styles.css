@@ -98,6 +98,7 @@ body {
   padding: 0;
   list-style: none;
   max-width: 500px;
+  margin-left: 30px;
 }
 
 .navigation-item {
@@ -125,6 +126,25 @@ body {
 
 .user {
   padding: 20px 12px;
+  position: relative;
+}
+
+.notifications {
+  font-size: 10px;
+  border: 3px solid #7db54f;
+  border-radius: 50%;
+  background-color: #7db54f;
+  color: #ffffff;
+  position: absolute;
+  display: block;
+  top: 10px;
+  right: 3px;
+  width: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 15px;
+  height: 20px;
+  text-align: center;
 }
 
 .main-container {
@@ -143,10 +163,9 @@ body {
 }
 
 .header-button {
-  align-self: center;
-  flex-shrink: 0;
   margin: 14px 0 14px 20px;
   max-width: 200px;
+  padding: 8px 34px;
 }
 
 .page-header-logo {
@@ -221,7 +240,9 @@ body {
   line-height: 28px;
   text-transform: uppercase;
   max-width: 175px;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #000000;
 }
 
 .advantages-description {
