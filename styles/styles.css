@@ -105,7 +105,8 @@ body {
   padding: 0;
   list-style: none;
   max-width: 500px;
-  margin-left: 30px;
+  margin-left: 44px;
+  gap: 32px;
 }
 
 .navigation-item {
@@ -117,6 +118,7 @@ body {
   display: flex;
   margin-left: auto;
   margin-right: 70px;
+  gap: 24px;
 }
 
 .navigation-link {
@@ -128,12 +130,19 @@ body {
   color: #000000;
   text-decoration: none;
   text-transform: capitalize;
-  padding: 20px 16px;
+  padding: 20px 0;
+  height: 100%;
 }
 
+.navigation-link-current {
+  border-bottom: 2px solid #756257;
+}
+
+
 .user {
-  padding: 20px 12px;
+  padding: 22px 0;
   position: relative;
+  line-height: 0;
 }
 
 .notifications {
@@ -145,7 +154,7 @@ body {
   position: absolute;
   display: block;
   top: 10px;
-  right: 3px;
+  right: -8px;
   width: 20px;
   font-style: normal;
   font-weight: 400;
@@ -170,7 +179,7 @@ body {
 }
 
 .header-button {
-  margin: 14px 0 14px 20px;
+  margin: 14px 0 14px 9px;
   max-width: 200px;
   padding: 8px 34px;
 }
@@ -497,7 +506,7 @@ body {
   line-height: 78px;
   color: #ffffff;
   margin-top: 0;
-  margin-bottom: 8px;
+  margin-bottom: 5px;
   padding: 0;
   padding-left: 70px;
   padding-top: 35px;
@@ -509,7 +518,7 @@ body {
   padding: 0;
   padding-left: 70px;
   list-style: none;
-  gap: 27px;
+  gap: 10px;
 }
 
 .breadcrumbs-item {
@@ -534,9 +543,17 @@ body {
   height: inherit;
 }
 
-.breadcrumbs-icon {
-  margin: 0;
-  padding: 0;
+.breadcrumbs-item::before {
+  content: "";
+  display: inline-block;
+  width: 15px;
+  height: 17px;
+  background-image: url("../images/breadcrumbs.svg");
+  background-repeat: no-repeat;
+}
+
+.breadcrumbs-item:first-child::before {
+  display: none;
 }
 
 .catalog-products {
@@ -544,8 +561,8 @@ body {
   flex-wrap: wrap;
   margin: 0 auto;
   width: 1060px;
-  padding-top: 38px;
-  padding-bottom: 70px;
+  padding-top: 40px;
+  padding-bottom: 71px;
 }
 
 .filter-left {
