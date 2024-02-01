@@ -187,6 +187,7 @@ body {
   margin: 0 auto;
   width: 458px;
   height: 352px;
+  margin-top: 5px;
 }
 
 .advantages {
@@ -200,7 +201,7 @@ body {
   list-style: none;
   margin: 0;
   padding: 0;
-  padding-top: 5px;
+  padding-top: 26px;
 }
 
 .hero {
@@ -208,7 +209,7 @@ body {
   background-color: #ffffff;
   background-image: url("../images/decor.svg"), url("../images/index-background.jpg");
   background-position: 50% 100%, 50% 50%;
-  height: 434px;
+  height: 485px;
   background-repeat: no-repeat;
   padding-top: 45px;
 }
@@ -240,7 +241,7 @@ body {
   line-height: 28px;
   text-transform: uppercase;
   max-width: 175px;
-  margin-bottom: 30px;
+  margin: 0 0 30px;
   padding-bottom: 30px;
   border-bottom: 1px solid #000000;
 }
@@ -335,12 +336,16 @@ body {
   line-height: 28px; /* 116.667% */
   text-transform: uppercase;
   margin: 0;
-  padding: 30px 0;
+  padding: 0 0 30px;
 }
 
 .service-description {
   margin: 0;
   max-width: 230px;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
 }
 
 .search {
