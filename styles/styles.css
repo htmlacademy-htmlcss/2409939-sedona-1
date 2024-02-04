@@ -477,8 +477,42 @@ body {
   padding: 0 11px;
 }
 
+.footer-social-link {
+  color: #83b3d3;
+}
+
+.footer-social-link:hover {
+  color: #68a2ca;
+}
+
+.footer-social-link:focus {
+  color: #68a2ca;
+}
+
+.footer-social-link:active {
+  color: #d2e3ef;
+}
+
+
+
 .page-footer-logo {
   width: 115px;
+}
+
+.page-footer-html-logo {
+  color: #000000;
+}
+
+.page-footer-html-logo:hover {
+  color: #756157;
+}
+
+.page-footer-html-logo:focus {
+  color: #756157;
+}
+
+.page-footer-html-logo:active {
+  color: #d6d0cd;
 }
 
 .footer-contacts-phone {
@@ -491,6 +525,40 @@ body {
   margin: 40px 0 30px;
   padding: 5px;
 }
+
+.footer-contacts-phone:hover {
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 40px; /* 100% */
+  text-transform: uppercase;
+  color: #756157;
+  text-decoration: none;
+  margin: 40px 0 30px;
+  padding: 5px;
+}
+
+.footer-contacts-phone:focus {
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 40px; /* 100% */
+  text-transform: uppercase;
+  color: #756157;
+  text-decoration: none;
+  margin: 40px 0 30px;
+  padding: 5px;
+}
+
+.footer-contacts-phone:active {
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 40px; /* 100% */
+  text-transform: uppercase;
+  color: #d6d0cd;
+  text-decoration: none;
+  margin: 40px 0 30px;
+  padding: 5px;
+}
+
 /*catalog*/
 
 .main-inner {
