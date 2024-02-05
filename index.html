@@ -191,49 +191,68 @@
     </footer>
     <div class="modal-container">
       <div class="modal modal-check-in">
-        <button class="modal-close-button">
+        <button class="button-modal modal-close-button">
           <span class="visually-hidden">закрыть</span>
+          <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17.4905 4.78288L16.1982 3.49057L10.4905 9.19826L4.78279 3.49057L3.49048 4.78288L9.19817 10.4906L3.49048 16.1983L4.78279 17.4906L10.4905 11.7829L16.1982 17.4906L17.4905 16.1983L11.7828 10.4906L17.4905 4.78288Z" fill="currentColor"/>
+            </svg>
         </button>
         <section class="modal-content">
           <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
           <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
-            <p class="modal-form-data">
+            <p class="modal-form-date">
               <label class="form-label" for="modal-date">
-                Дата Заезда
+                Дата Заезда:
               </label>
-              <input class="hotel-data" type="number" id="modal-date" name="modal-date" placeholder="27.04.2020">
+              <input class="hotel-date" type="text" id="modal-date" name="modal-date" value="27 апреля 2020">
             </p>
           </form>
+          <p class="hotel-date-check-in hotel-date-check-in-error">Мы не можем отправить вас в прошлое.</p>
           <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
-            <p class="modal-form-data">
+            <p class="modal-form-date">
               <label class="form-label" for="modal-date">
-                Дата Выезда
+                Дата Выезда:
               </label>
-              <input class="hotel-data" type="number" id="modal-date" name="modal-date" placeholder="01.09.2021">
+              <input class="hotel-date hotel-date-departure" type="text" id="modal-date" name="modal-date" value="1 сентября 2023">
             </p>
           </form>
+          <p class="hotel-date-check-in">На эти даты есть свободные номера. Пока есть.</p>
           <div class="modal-check-in-people">
             <div class="modal-form-adult-children">
-              <span class="adult-children">Взрослые</span>
+              <span class="adult-children">Взрослые:</span>
               <div class="adult-children-form">
-                <button class="button-modal button-modal-min" type="button">
-                  <span>-</span>
+                <button class="button-modal button-modal-minus" type="button">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 9V11H17V9H3Z" fill="currentColor" fill-opacity="0.3"/>
+                  </svg>
                 </button>
                 <span>2</span>
-                <button class="button-modal button-modal-max" type="button">
-                  <span>+</span>
+                <button class="button-modal button-modal-plus" type="button">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z" fill="currentColor" fill-opacity="0.3"/>
+                  </svg>
                 </button>
               </div>
             </div>
             <div class="modal-form-adult-children">
-              <span class="adult-children">Дети</span>
+              <span class="adult-children">Дети:</span>
+              <span class="children-tooltip">
+                <span class="children-tooltip-icon">i</span>
+                <span class="children-tooltip-content">
+                  Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
+                </span>
+              </span>
               <div class="adult-children-form">
-                <button class="button-modal button-children-min" type="button">
-                  <span>-</span>
+                <button class="button-modal button-modal-minus" type="button">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 9V11H17V9H3Z" fill="currentColor" fill-opacity="0.3"/>
+                    </svg>
                 </button>
                 <span>2</span>
-                <button class="button-modal button-children-max" type="button">
-                  <span>+</span>
+                <button class="button-modal button-modal-plus" type="button">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z" fill="currentColor" fill-opacity="0.3"/>
+                  </svg>
                 </button>
               </div>
             </div>
