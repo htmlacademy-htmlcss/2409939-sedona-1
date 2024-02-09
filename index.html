@@ -25,19 +25,13 @@
           </ul>
           <ul class="navigation-list navigation-user">
             <li class="navigation-item">
-              <a class="navigation-link user" href="#">
-                <img src="images/search.svg" alt="Иконка поиск">
-                <span class="visually-hidden">
-                  Поиск
-                </span>
+              <a class="navigation-link user user-search" href="#">
+                <span class="visually-hidden">Поиск</span>
               </a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link user" href="#">
-                <img src="images/heart.svg" alt="Иконка избранное">
-                <span class="visually-hidden">
-                  Избранное
-                </span>
+              <a class="navigation-link user user-heart" href="#">
+                <span class="visually-hidden">Избранное</span>
                 <span class="notifications">12</span>
               </a>
             </li>
@@ -79,14 +73,14 @@
               </li>
               <li class="advantages-item">
                 <div class="advantages-wrap">
-                  <h3 class="advantages-title">Мало туристов</h3>
+                  <h3 class="advantages-title">Мало<br> туристов</h3>
                   <p class="advantages-description">Большинство едет в Гранд Каньон и толпится там</p>
                   </div>
               </li>
               <li class="advantages-item advantages-item-blue">
                 <img class="advantages-image" src="images/photo-2.jpg" alt="Мост дьявола">
                 <div class="advantages-wrap">
-                  <h3 class="advantages-title">Там есть мост дьявола</h3>
+                  <h3 class="advantages-title">Там есть<br> мост дьявола</h3>
                   <p class="advantages-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
                 </div>
               </li>
@@ -94,7 +88,7 @@
           </section>
           <section class="service">
             <h2 class="visually-hidden">Сервис</h2>
-            <p class="subtitle service-subtitle">Приезжайте в Седону отдохнуть в комфорте и уюте!</p>
+            <p class="subtitle service-subtitle">Приезжайте в Седону отдохнуть<br> в комфорте и уюте!</p>
             <p class="description">Опытный персонал и качественное обслуживание!</p>
             <ul class="service-list">
               <li class="service-item service-item-blue service-item-home">
@@ -119,7 +113,7 @@
           </section>
           <section class="subscription subscription--background">
             <h2 class="visually-hidden">Подписка на рассылку</h2>
-            <p class="subtitle subtitle-margin">Подпишитесь на рассылку</p>
+            <p class="subscription-subtitle">Подпишитесь на рассылку</p>
             <p class="subscription-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
             <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
               <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
@@ -189,32 +183,29 @@
     </div>
     <div class="modal-container modal-container-close">
       <div class="modal modal-check-in">
-        <button class="button-modal modal-close-button">
+        <button class="button-modal modal-close-button" type="button">
           <span class="visually-hidden">закрыть</span>
           <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M17.4905 4.78288L16.1982 3.49057L10.4905 9.19826L4.78279 3.49057L3.49048 4.78288L9.19817 10.4906L3.49048 16.1983L4.78279 17.4906L10.4905 11.7829L16.1982 17.4906L17.4905 16.1983L11.7828 10.4906L17.4905 4.78288Z" fill="currentColor"/>
             </svg>
         </button>
-        <section class="modal-content">
+        <section class="modal-content modal-content-close">
           <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
           <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
             <p class="modal-form-date">
               <label class="form-label" for="modal-date">
                 Дата Заезда:
               </label>
-              <input class="hotel-date" type="text" id="modal-date" name="modal-date" value="27 апреля 2020">
+              <input class="hotel-date" type="text" id="modal-text" name="modal-text" value="27 апреля 2020">
             </p>
-          </form>
-          <p class="hotel-date-check-in hotel-date-check-in-error">Мы не можем отправить вас в прошлое.</p>
-          <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
+            <p class="hotel-date-check-in hotel-date-check-in-error">Мы не можем отправить вас в прошлое.</p>
             <p class="modal-form-date">
               <label class="form-label" for="modal-date">
                 Дата Выезда:
               </label>
-              <input class="hotel-date hotel-date-departure" type="text" id="modal-date" name="modal-date" value="1 сентября 2023">
+              <input class="hotel-date hotel-date-departure" type="text" id="modal-text" name="modal-text" value="1 сентября 2023">
             </p>
-          </form>
-          <p class="hotel-date-check-in">На эти даты есть свободные номера. Пока есть.</p>
+            <p class="hotel-date-check-in">На эти даты есть свободные номера. Пока есть.</p>
           <div class="modal-check-in-people">
             <div class="modal-form-adult-children">
               <span class="adult-children">Взрослые:</span>
@@ -224,7 +215,7 @@
                     <path d="M3 9V11H17V9H3Z" fill="currentColor" fill-opacity="0.3"/>
                   </svg>
                 </button>
-                <span>2</span>
+                <input class="quantity" type="number" name="age" value="2"></input>
                 <button class="button-modal button-modal-plus" type="button">
                   <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z" fill="currentColor" fill-opacity="0.3"/>
@@ -246,7 +237,7 @@
                     <path d="M3 9V11H17V9H3Z" fill="currentColor" fill-opacity="0.3"/>
                     </svg>
                 </button>
-                <span>2</span>
+                <input class="quantity" type="number" name="teen_age" value="2"></input>
                 <button class="button-modal button-modal-plus" type="button">
                   <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z" fill="currentColor" fill-opacity="0.3"/>
@@ -255,7 +246,8 @@
               </div>
             </div>
           </div>
-          <a class="button button-modal-search" href="#">Найти</a>
+          <button class="button button-modal-search" type="submit">Найти</button>
+          </form>
         </section>
       </div>
     </div>

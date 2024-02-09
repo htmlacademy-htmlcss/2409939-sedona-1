@@ -25,19 +25,13 @@
           </ul>
           <ul class="navigation-list navigation-user">
             <li class="navigation-item">
-              <a class="navigation-link user" href="#">
-                <img src="images/search.svg" alt="Иконка поиск">
-                <span class="visually-hidden">
-                  Поиск
-                </span>
+              <a class="navigation-link user user-search" href="#">
+                <span class="visually-hidden">Поиск</span>
               </a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link user" href="#">
-                <img src="images/heart.svg" alt="Иконка избранное">
-                <span class="visually-hidden">
-                  Избранное
-                </span>
+              <a class="navigation-link user user-heart" href="#">
+                <span class="visually-hidden">Избранное</span>
                 <span class="notifications">12</span>
               </a>
             </li>
@@ -55,10 +49,11 @@
               <ul class="breadcrumbs">
                 <li class="breadcrumbs-item breadcrumbs-item-home">
                   <a class="breadcrumbs-link breadcrumbs-link-home" href="index.html">
-                    <svg width="13" height="15" viewBox="0 0 13 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg width="13" height="15" viewBox="0 0 13 15" fill="none" xmlns="http://www.w3.org/2000/svg" alt >
                       <path d="M6.5 0.5L0.5 6.30006V12.5001H12.5V6.30006L6.5 0.5ZM11.5 11.5001H1.5V6.70005L6.5 1.9L11.5 6.70005V11.5001Z" fill="currentColor"/>
                       <path d="M4.5 10.5001H5.5V8.00005H7.5V10.5001H8.5V7.00005H4.5V10.5001Z" fill="currentColor"/>
                       </svg>
+                      <span class="visually-hidden">главная</span>
                   </a>
                 </li>
                 <li class="breadcrumbs-item">
@@ -66,7 +61,7 @@
                 </li>
               </ul>
             </header>
-            <section class="catalog-products">
+            <div class="catalog-products">
               <h2 class="visually-hidden">Список гостинец с фильтрами</h2>
               <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
                 <div class="filter-left">
@@ -155,28 +150,25 @@
                   </div>
                 </div>
               </form>
-            </section>
+            </div>
           </div>
           <div class="catalog-column">
             <div class="sorting-container">
               <h2 class="heading">Найдено гостиниц: <span>38</span> </h2>
               <div class="catalog-sorting">
-                <select class="select-control" aria-label="Сортировка">
+                <select class="select-control"aria-label="Сортировка">
                   <option value="cheap" selected>Сначала дешёвые</option>
                   <option value="popular">Сначала популярные</option>
                   <option value="expensive">Сначала дорогие</option>
                 </select>
                 <div class="display-selection">
-                  <button class="button button-display-selection" type="button">
-                    <img src="images/table.svg" alt="Показать карточки">
+                  <button class="button button-display-selection button-display-selection-table" type="button">
                     <span class="visually-hidden">Показать карточки</span>
                   </button>
-                  <button class="button button-display-selection" type="button">
-                    <img src="images/slideshow.svg" alt="Показать во весь экран">
+                  <button class="button button-display-selection button-display-selection-slideshow" type="button">
                     <span class="visually-hidden">Показать во весь экран</span>
                   </button>
-                  <button class="button button-display-selection" type="button">
-                    <img src="images/list.svg" alt="Показать список">
+                  <button class="button button-display-selection button-display-selection-list" type="button">
                     <span class="visually-hidden">Показать список</span>
                   </button>
                 </div>
@@ -295,7 +287,7 @@
           </ol>
           <section class="subscription">
             <h2 class="visually-hidden">Подписка на рассылку</h2>
-            <p class="subtitle subtitle-margin">Подпишитесь на рассылку</p>
+            <p class="subscription-subtitle">Подпишитесь на рассылку</p>
             <p class="subscription-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
             <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
               <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
