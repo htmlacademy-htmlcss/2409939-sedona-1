@@ -26,6 +26,7 @@ html {
 
 body {
   margin: 0;
+  min-width: 1280px;
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -38,18 +39,12 @@ body {
 
 .shadow-container {
   margin: 0 auto;
-  padding: 0 40px;
-  width: 1280px;
+  width: 1200px;
   min-height: 100%;
   display: flex;
   flex-direction: column;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
   flex-shrink: 0;
-}
-
-.shadow-container .shadow-container {
-  padding: 0;
-  width: 100%;
 }
 
 .visually-hidden {
@@ -152,6 +147,8 @@ body {
 
 .button-transparent:focus {
   background-color: transparent;
+  box-shadow: 0 0 0 3px #83b3d3;
+
 }
 
 .button-transparent:active {
@@ -653,7 +650,6 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  flex-grow: 1;
   align-items: center;
   width: 1200px;
   margin: 0 auto;
@@ -754,6 +750,7 @@ body {
   width: 100%;
   height: 100%;
   background-color: rgba(242, 242, 242, 0.8);
+  z-index: 100;
 }
 
 .modal-container-close {
@@ -783,6 +780,7 @@ body {
   margin-left: 8px;
   margin-right: 8px;
   padding: 0;
+  cursor: pointer;
 }
 
 .button-modal:hover {
@@ -801,7 +799,7 @@ body {
 }
 
 .button-modal:disabled {
-  opacity: 0.3;
+  pointer-events: none;
 }
 
 .modal-close-button {
@@ -940,6 +938,7 @@ body {
   color: #000000;
   background-color: #f2f2f2;
   border: none;
+  border-radius: 4px;
   width: 438px;
   height: 48px;
   background-image: url("../images/date.svg");
@@ -957,7 +956,7 @@ body {
 .hotel-date:focus {
   background-color: #e6e6e6;
   color: #5c5c5c;
-  border: 2px solid #82b3d3;
+  box-shadow: 0 0 0 2px #83b3d3;
   outline: none;
 }
 
@@ -1015,6 +1014,10 @@ body {
   width: 31px;
   appearance: none;
   text-align: center;
+}
+
+.quantity:hover {
+  color: #d5cfcc;
 }
 
 .button-modal-search {
@@ -1207,6 +1210,7 @@ body {
   width: 20px;
   height: 20px;
   display: inline-block;
+  flex-shrink: 0;
   border: none;
   border-radius: 4px;
   cursor: pointer;
@@ -1306,15 +1310,19 @@ body {
 
 .range-toggle:hover {
   background-color: #ffffff;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
 }
 
 .range-toggle:focus {
   border: 2px solid #83b3d3;
   outline: none;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
 }
 
 .range-toggle:active {
   border: 2px solid #83b3d3;
+  left: 0;
+  box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.4);
 }
 
 .range-toggle:disabled {
